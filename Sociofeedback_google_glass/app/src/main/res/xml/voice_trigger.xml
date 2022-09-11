@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <trigger keyword="@string/start_command">
+    <trigger keyword="Sociofeedback" />
+    <trigger keyword="Settings" />
+    <trigger keyword="About us" />
+</trigger>
+

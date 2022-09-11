@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/switchS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="50dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="VOL"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"  />
+
+
+    <com.example.indrihartanto.glasssociofeedback.IconRoundCornerProgressBar
+        android:id="@+id/progressBarV"
+        android:layout_width="345dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        app:rcBackgroundColor="@color/custom_progress_background"
+        app:rcBackgroundPadding="3dp"
+        app:rcIconBackgroundColor="@color/custom_progress_blue_header"
+        app:rcIconPadding="3dp"
+        app:rcIconSize="21dp"
+        app:rcIconSrc="@mipmap/ic_volume"
+        app:rcMax="100"
+        app:rcProgress="90"
+        app:rcProgressColor="@color/custom_progress_blue_progress"
+        app:rcRadius="5dp" />
+
+    <TextView
+        android:id="@+id/textViewV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0%"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="393dp"
+        android:layout_alignBottom="@+id/volume"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pitch in Hz:"
+        android:textSize="12dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMessage"
+        android:text="0 Hz"
+        android:textSize="12dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textSize="12dp"
+        android:id="@+id/lbl_result_txtview"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_txtview"
+        android:text="silence"
+        android:textSize="12dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="200dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume in dBSPL:"
+        android:textSize="12dp"
+        android:id="@+id/lbl_tvdBlevel"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvdBlevel"
+        android:text="0 dB"
+        android:textSize="12dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume:"
+        android:textSize="12dp"
+        android:id="@+id/lbl_res_tvdBlevel"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="95dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_tvdBlevel"
+        android:text="0"
+        android:textSize="12dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="95dp"/>
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MFCC:"
+        android:textSize="12dp"
+        android:id="@+id/lbl_res_mfcc"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="110dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_mfcc"
+        android:text="0"
+        android:textSize="12dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="110dp"/-->
+
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="380dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="10dp" />
+
+
+
+
+    <!--TextView
+        android:id="@+id/feedbacktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:text="Feedback Text"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="110dp" />
+
+    <ImageView
+        android:id="@+id/feedbackimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sociofeedback"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        /-->
+</RelativeLayout>

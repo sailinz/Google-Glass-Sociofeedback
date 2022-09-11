@@ -1,0 +1,62 @@
+//modified by Sailin on 7 Oct 2015
+
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'prebuilt-libs'
+    }
+}
+
+android {
+    compileSdkVersion "Google Inc.:Glass Development Kit Preview:19"
+    buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        applicationId "com.example.indrihartanto.glasssociofeedback"
+        minSdkVersion 19
+        targetSdkVersion 19
+        //targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //for native C++ code
+    sourceSets {
+        main {
+            jni.srcDirs = []
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //compile files('libs/flanagan.jar')
+    //compile files('libs/rt.jar')
+    compile files('src/main/lib/android-support-v4-47c25717595045cb1280aeb8baa15a50.jar')
+    compile files('src/main/lib/annotations-79f46c4530c03aab36a805cf715979b8.jar')
+    compile files('src/main/libs/TarsosDSP-Android-latest.jar')
+    compile files('src/main/libs/android-support-v4-22fa37cfe3bbc09df5844d5d23d6b23f.jar')
+    compile files('src/main/libs/android-support-v7-appcompat-6b0eda8a679da6f3ae58815906b29aa8.jar')
+    compile files('src/main/libs/appcompat_v7-d264b544c58ff402a927c41d4fea08a4.jar')
+    compile files('src/main/libs/TarsosDSP-Android-2.0-bin-fc10ab66ed6326fb7aba139180b92380.jar')
+    compile files('src/main/libs/android-support-v4.jar')
+    compile files('src/main/libs/android-support-v7.jar')
+    compile "com.android.support:appcompat-v7:19.0.+"
+    compile "com.android.support:support-v4:20.0.+"
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.jjoe64:graphview:4.0.1'
+    compile 'com.github.nkzawa:socket.io-client:0.3.0'
+}

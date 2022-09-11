@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <trigger keyword="Real-time feedback" />
+    <trigger keyword="Settings" />
+    <trigger keyword="About us" />
+</PreferenceScreen>

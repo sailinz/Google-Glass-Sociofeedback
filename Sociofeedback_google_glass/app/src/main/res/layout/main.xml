@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="45sp"
+        android:typeface="sans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:scaleType = "centerCrop"
+        android:id="@+id/welcome" /-->
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:src="@drawable/title2"
+        />
+
+    <com.example.indrihartanto.glasssociofeedback.SecretTextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_centerHorizontal="true"
+        android:text="To become a better communicator."
+        android:textSize="13sp"
+        android:typeface="sans"
+        android:textColor="@android:color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/userguide"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:text="User Guide"
+        android:src="@drawable/icon_profile"
+        />
+
+    <ImageButton
+        android:id="@+id/aboutus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon_settings"
+        android:background="@android:color/transparent"
+        android:text="About Us"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
